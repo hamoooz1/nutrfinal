@@ -1,5 +1,3 @@
-// src/data/questions.js
-
 const questions = {
   multipleChoice: [
     {
@@ -26,6 +24,26 @@ const questions = {
         "Dehydration"
       ],
       answer: "Hyponatremia"
+    },
+    {
+      question: "Which organ primarily regulates electrolyte balance in the body?",
+      options: ["Liver", "Kidneys", "Lungs", "Heart"],
+      answer: "Kidneys"
+    },
+    {
+      question: "What is a symptom of hyperkalemia?",
+      options: ["Excessive thirst", "Irregular heartbeat", "Blurred vision", "Hair loss"],
+      answer: "Irregular heartbeat"
+    },
+    {
+      question: "What common food is a rich source of potassium?",
+      options: ["Cheese", "Banana", "Bread", "Chicken"],
+      answer: "Banana"
+    },
+    {
+      question: "Why is sodium important in sports drinks?",
+      options: ["Provides energy", "Helps retain water", "Builds muscle", "Reduces lactic acid"],
+      answer: "Helps retain water"
     }
   ],
 
@@ -37,6 +55,15 @@ const questions = {
         { term: "Potassium", match: "Draws water into cells" },
         { term: "Calcium", match: "Muscle contraction and bone strength" },
         { term: "Magnesium", match: "Supports nerve function" }
+      ]
+    },
+    {
+      question: "Match the condition to its cause",
+      pairs: [
+        { term: "Hyponatremia", match: "Overhydration" },
+        { term: "Hypokalemia", match: "Vomiting/Diarrhea" },
+        { term: "Hypercalcemia", match: "Overactive parathyroid" },
+        { term: "Hypernatremia", match: "Dehydration" }
       ]
     }
   ],
@@ -52,6 +79,22 @@ const questions = {
     },
     {
       question: "Electrolytes are only important during exercise.",
+      answer: false
+    },
+    {
+      question: "Electrolytes help regulate nerve and muscle function.",
+      answer: true
+    },
+    {
+      question: "Sweating heavily without replacing electrolytes can lead to imbalance.",
+      answer: true
+    },
+    {
+      question: "Drinking too much water can never be harmful.",
+      answer: false
+    },
+    {
+      question: "Calcium only affects bone health, not nerves or muscles.",
       answer: false
     }
   ]
