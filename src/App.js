@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import GameSelector from "./components/GameSelector";
+import MultipleChoiceGame from "./components/MultipleChoiceGame";
+import MatchingGame from "./components/MatchingGame";
+import TrueFalseGame from "./components/TrueFalseGame";
+import FlashcardGame from "./components/FlashcardGame";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<GameSelector />} />
+        <Route path="/multiple-choice" element={<MultipleChoiceGame />} />
+        <Route path="/matching" element={<MatchingGame />} />
+        <Route path="/flashcards" element={<FlashcardGame />} />
+        <Route path="/true-false" element={<TrueFalseGame />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,81 @@
+/* GameStyles.css */
+
+.container {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: 50px auto;
+  width: 90%;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #004d40;
+}
+
+.choice-btn {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #26c6da;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.choice-btn:hover {
+  background-color: #00acc1;
+}
+
+.choice-btn.correct {
+  background-color: #66bb6a !important;
+}
+
+.choice-btn.wrong {
+  background-color: #ef5350 !important;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #00796b;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #004d40;
+}
+
+.progress-bar {
+  background: #ddd;
+  height: 10px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background: #4caf50;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
